@@ -171,10 +171,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Hubs\PublicChatHub.cs" />
+    <Compile Include="Module\PublicChat\PublicChatHub.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Module\PublicChat\PublicChatController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -236,6 +237,8 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\baivietscripts.js" />
+    <Content Include="Scripts\homeindexscript.js" />
     <Content Include="Scripts\jquery.signalr-2.2.0.js" />
     <Content Include="Scripts\jquery.signalr-2.2.0.min.js" />
     <Content Include="Scripts\plugins\bootstrap-slider\bootstrap-slider.js" />
@@ -727,7 +730,7 @@
     <Content Include="Scripts\plugins\timepicker\bootstrap-timepicker.js" />
     <Content Include="Scripts\plugins\timepicker\bootstrap-timepicker.min.css" />
     <Content Include="Scripts\plugins\timepicker\bootstrap-timepicker.min.js" />
-    <Content Include="Views\Module\PublicChat\controller_public_chat_box.js" />
+    <Content Include="Module\PublicChat\controller_public_chat_box.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -739,8 +742,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
@@ -762,7 +763,6 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Home\Chat.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -788,7 +788,9 @@
     <Content Include="Scripts\plugins\ckeditor\skins\moono\readme.md" />
     <Content Include="Scripts\plugins\input-mask\phone-codes\phone-be.json" />
     <Content Include="Scripts\plugins\input-mask\phone-codes\phone-codes.json" />
-    <Content Include="Views\Module\PublicChat\BoxPublicChat.cshtml" />
+    <Content Include="Module\PublicChat\BoxPublicChat.cshtml" />
+    <Content Include="Views\templatebox.cshtml" />
+    <Content Include="Views\Home\Chat.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
