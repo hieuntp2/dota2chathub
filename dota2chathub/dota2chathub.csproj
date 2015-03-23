@@ -171,6 +171,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Hubs\PublicChatHub.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -235,6 +236,8 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\jquery.signalr-2.2.0.js" />
+    <Content Include="Scripts\jquery.signalr-2.2.0.min.js" />
     <Content Include="Scripts\plugins\bootstrap-slider\bootstrap-slider.js" />
     <Content Include="Scripts\plugins\bootstrap-slider\slider.css" />
     <Content Include="Scripts\plugins\bootstrap-wysihtml5\bootstrap3-wysihtml5.all.min.js" />
@@ -724,6 +727,7 @@
     <Content Include="Scripts\plugins\timepicker\bootstrap-timepicker.js" />
     <Content Include="Scripts\plugins\timepicker\bootstrap-timepicker.min.css" />
     <Content Include="Scripts\plugins\timepicker\bootstrap-timepicker.min.js" />
+    <Content Include="Views\Module\PublicChat\controller_public_chat_box.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -784,6 +788,7 @@
     <Content Include="Scripts\plugins\ckeditor\skins\moono\readme.md" />
     <Content Include="Scripts\plugins\input-mask\phone-codes\phone-be.json" />
     <Content Include="Scripts\plugins\input-mask\phone-codes\phone-codes.json" />
+    <Content Include="Views\Module\PublicChat\BoxPublicChat.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -803,7 +808,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>52298</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:52298/</IISUrl>
+          <IISUrl>http://localhost:52270/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
